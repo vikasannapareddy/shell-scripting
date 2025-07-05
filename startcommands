@@ -1,0 +1,26 @@
+Git initial commands
+	1.file create chaysi code/ script rasukovali
+	
+	2.save
+	
+	3.git loo folder loo ki velali using cd commands
+	
+	4.main floder lo ki vellali using cd shell-scripting commands
+	
+	5.status chudali to check files add or not
+	
+	6.add the files using git add .
+	
+	7.commit git commit -m "msg"
+	
+	8.push git push origin main
+	
+	9.run chayali
+	bash filename.shell-scripting
+	
+	for linux server 
+	9.git pull
+	
+	10.run sh filename.sh varibles .....
+	
+	
