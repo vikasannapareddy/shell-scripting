@@ -23,4 +23,17 @@ Git initial commands
 	
 	10.run sh filename.sh varibles .....
 	
-	
+TO CREATE BRANCH IN GIT:
+
+1. git checkout -b <branchname>
+to create branch
+
+2. to switch between branches
+git checkout <branchname>
+
+3.to check current/working branch 
+git branch
+
+4.to check commit history 
+git log
+git log --oneline
