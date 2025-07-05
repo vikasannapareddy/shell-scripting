@@ -14,5 +14,5 @@ then
     echo "The $variable is less than 10"
 
 else
-    echo "The $variable is greater than or equal to 10"
+    echo "The $variable is greater than  10"
 fi
