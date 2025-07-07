@@ -16,7 +16,7 @@ dnf list installed mysql         # this command is used to check whether mysql i
 if [ $? -ne 0 ]                  # $? is used to check the exit status of the last command executed, if it is not equal to 0 then it means that the command failed
 then
     echo "mysql is not installed.... going to install mysql"
-    dnf install mysql-server -y       # this command is used to install mysql server, -y is used to automatically answer yes to all prompts
+    dnf install mysql -y       # this command is used to install mysql server, -y is used to automatically answer yes to all prompts
     if [ $? -eq 0 ]     
     then
         echo "Installing MYSQL server is........ successful"
