@@ -31,7 +31,7 @@ if [ $? -ne 0 ]                  # $? is used to check the exit status of the la
 then
     echo "mysql is not installed.... going to install mysql"
     dnf install mysql -y   
-    VALIDATE $? "MYSQL"
+    VALIDATE $? "MYSQL"     # $? is first input as $1,  mysql is second input as $2
 else
     echo "mysql is already installed.... nothing to do"
 fi
