@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid=4(id -u)
+userid=$(id -u)
 
 if [ $userid -ne 0 ]
 then
