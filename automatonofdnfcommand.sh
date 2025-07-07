@@ -24,7 +24,8 @@ then
         echo "Installing MYSQL server is........ failed"
         exit 1
 
-else                           # if the command is successful then it means that mysql is already installed
+else                      
+ # if the command is successful then it means that mysql is already installed
     echo "mysql is already installed.... nothing to do"
 
 fi
