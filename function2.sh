@@ -11,13 +11,13 @@ else
 
 
 fi                             # fi is used to end the if statement
-
+#validate function takes input as exit status, what command they tried to install
 VALIDATE(){
     if [ $? -eq 0 ]          # $? is used to check the exit status of the last command executed, if it is equal to 0 then it means that the command was successful
     then
-        echo "Installing $1 is........ successful"
+        echo "Installing $2 is........ successful"
     else
-        echo "Installing $1 is........ failed"
+        echo "Installing $2 is........ failed"
         exit 1                 # exit with error code 1 ,this is used to indicate that the script did not run successfully
     fi
 }
@@ -62,6 +62,10 @@ else
     echo "python3 is already installed.... nothing to do"
     # the command is successful then it means that python3 is already installed
     # so we can exit the script with success code 0
+    dnf install python3-pip -y
+    VALIDATE $? "python3"
+else
+    echo "python3 is already installed.... nothing to do"
     exit 0
 
 
